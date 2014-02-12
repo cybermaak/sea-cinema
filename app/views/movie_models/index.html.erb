@@ -3,6 +3,11 @@
 <table>
   <thead>
     <tr>
+      <th>Title</th>
+      <th>Releasedate</th>
+      <th>Rating</th>
+      <th>Length</th>
+      <th>Summary</th>
       <th></th>
       <th></th>
       <th></th>
@@ -12,6 +17,11 @@
   <tbody>
     <% @movie_models.each do |movie_model| %>
       <tr>
+        <td><%= movie_model.title %></td>
+        <td><%= movie_model.releaseDate %></td>
+        <td><%= movie_model.rating %></td>
+        <td><%= movie_model.length %></td>
+        <td><%= movie_model.summary %></td>
         <td><%= link_to 'Show', movie_model %></td>
         <td><%= link_to 'Edit', edit_movie_model_path(movie_model) %></td>
         <td><%= link_to 'Destroy', movie_model, method: :delete, data: { confirm: 'Are you sure?' } %></td>

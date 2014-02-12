@@ -1,4 +1,29 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <strong>Title:</strong>
+  <%= @movie_model.title %>
+</p>
+
+<p>
+  <strong>Releasedate:</strong>
+  <%= @movie_model.releaseDate %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @movie_model.rating %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @movie_model.length %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @movie_model.summary %>
+</p>
+
 <%= link_to 'Edit', edit_movie_model_path(@movie_model) %> |
 <%= link_to 'Back', movie_models_path %>

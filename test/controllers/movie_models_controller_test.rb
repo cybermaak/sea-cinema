@@ -18,7 +18,7 @@ class MovieModelsControllerTest < ActionController::TestCase
 
   test "should create movie_model" do
     assert_difference('MovieModel.count') do
-      post :create, movie_model: {  }
+      post :create, movie_model: { length: @movie_model.length, rating: @movie_model.rating, releaseDate: @movie_model.releaseDate, summary: @movie_model.summary, title: @movie_model.title }
     end
 
     assert_redirected_to movie_model_path(assigns(:movie_model))
@@ -35,7 +35,7 @@ class MovieModelsControllerTest < ActionController::TestCase
   end
 
   test "should update movie_model" do
-    patch :update, id: @movie_model, movie_model: {  }
+    patch :update, id: @movie_model, movie_model: { length: @movie_model.length, rating: @movie_model.rating, releaseDate: @movie_model.releaseDate, summary: @movie_model.summary, title: @movie_model.title }
     assert_redirected_to movie_model_path(assigns(:movie_model))
   end
 
