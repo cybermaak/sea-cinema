@@ -15,7 +15,7 @@
 # gem 'pg'
 #
 development:
-  adapter: sqlite
+  adapter: sqlite3
   encoding: unicode
   database: sea-cinema_development
   pool: 5

@@ -1,4 +1,16 @@
 SeaCinema::Application.routes.draw do
+  resources :movie_models
+
+  get "movies/create"
+  get "movies/view"
+  get "movies/update"
+  get "movies/delete"
+  get "movies/viewAll"
+  post "movie/create"
+  get "movie/get"
+  post "movie/update"
+  delete "movie/delete"
+  get "movie/getAll"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
